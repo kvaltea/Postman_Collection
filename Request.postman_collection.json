@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "df3fb60c-b3cd-479c-8cc9-6d16e9b3aa7d",
+		"name": "Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27529974",
+		"_collection_link": "https://www.postman.com/winter-robot-530085/workspace/test-api/collection/27529974-df3fb60c-b3cd-479c-8cc9-6d16e9b3aa7d?action=share&source=collection_link&creator=27529974"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "Check status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add Product",
+			"item": [
+				{
+					"name": "Add API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"chocolate\",\r\n\t\"quantity\": 35,\r\n\t\"price\": 3.99,\r\n\t\"_id\": \"66479cadbaee00ba85d0e3ff\",\r\n\t\"createdAt\": \"2024-05-17T18:06:37.926Z\",\r\n\t\"updatedAt\": \"2024-05-17T18:06:37.926Z\",\r\n\t\"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get all Product",
+			"item": [
+				{
+					"name": "Get API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Product By ID",
+			"item": [
+				{
+					"name": "Get ProdByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products/664689770ed5ddf0e3e418dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"664689770ed5ddf0e3e418dc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update a Product",
+			"item": [
+				{
+					"name": "Update API",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products/66468dae0ed5ddf0e3e418e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"66468dae0ed5ddf0e3e418e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update API",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products/66468dae0ed5ddf0e3e418e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"66468dae0ed5ddf0e3e418e0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete a Product",
+			"item": [
+				{
+					"name": "Delete a Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products/664690995f03129af74b131f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"664690995f03129af74b131f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
